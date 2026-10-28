@@ -1,0 +1,31 @@
+### Listar
+GET http://localhost:3000/cita
+
+###
+
+### Crear
+POST http://localhost:3000/cita
+Content-Type: application/json
+
+{
+  "fecha": "2026-06-20",
+  "hora": "08:00",
+  "doctor": "Dra. María López"
+}
+
+###
+
+### Modificar
+PUT http://localhost:3000/cita/1
+Content-Type: application/json
+
+{
+  "fecha": "2026-06-21",
+  "hora": "09:30",
+  "doctor": "Dr. Carlos Pérez"
+}
+
+###
+
+### Eliminar
+DELETE http://localhost:3000/cita/1
